@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33ABB6567954477B932F80E4 /* libPods-MarvelWiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD098296BA544803B906CBCE /* libPods-MarvelWiki.a */; };
+		743AAE5019230170006F7364 /* apiConfigSample.plist in Resources */ = {isa = PBXBuildFile; fileRef = 743AAE4F19230170006F7364 /* apiConfigSample.plist */; };
+		743AAE52192301E5006F7364 /* apiConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 743AAE51192301E5006F7364 /* apiConfig.plist */; };
+		743AAE58192302D0006F7364 /* MEDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 743AAE57192302D0006F7364 /* MEDataManager.m */; };
+		743AAE5B192306FE006F7364 /* MERootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 743AAE5A192306FE006F7364 /* MERootViewController.m */; };
+		743AAE5D192315B9006F7364 /* MERootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743AAE5C192315B9006F7364 /* MERootView.xib */; };
+		748D42C51A3947E500E6DBA0 /* NSString+MEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 748D42C41A3947E500E6DBA0 /* NSString+MEExtensions.m */; };
+		74A4A4871922FF00000E233F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A4861922FF00000E233F /* Foundation.framework */; };
+		74A4A4891922FF00000E233F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A4881922FF00000E233F /* CoreGraphics.framework */; };
+		74A4A48B1922FF00000E233F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A48A1922FF00000E233F /* UIKit.framework */; };
+		74A4A4911922FF00000E233F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A4A48F1922FF00000E233F /* InfoPlist.strings */; };
+		74A4A4931922FF00000E233F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A4A4921922FF00000E233F /* main.m */; };
+		74A4A4971922FF00000E233F /* MEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A4A4961922FF00000E233F /* MEAppDelegate.m */; };
+		74A4A4991922FF01000E233F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A4A4981922FF01000E233F /* Images.xcassets */; };
+		74A4A4A01922FF01000E233F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A49F1922FF01000E233F /* XCTest.framework */; };
+		74A4A4A11922FF01000E233F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A4861922FF00000E233F /* Foundation.framework */; };
+		74A4A4A21922FF01000E233F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A4A48A1922FF00000E233F /* UIKit.framework */; };
+		74A4A4AA1922FF01000E233F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A4A4A81922FF01000E233F /* InfoPlist.strings */; };
+		74A4A4AC1922FF01000E233F /* MarvelWikiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A4A4AB1922FF01000E233F /* MarvelWikiTests.m */; };
+		9630F5F21923B656001F077B /* MECharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9630F5F11923B656001F077B /* MECharacter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74A4A4A31922FF01000E233F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74A4A47B1922FF00000E233F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74A4A4821922FF00000E233F;
+			remoteInfo = MarvelWiki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E0105A3AD99C934D7BBA0CD /* Pods-MarvelWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelWiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelWiki/Pods-MarvelWiki.debug.xcconfig"; sourceTree = "<group>"; };
+		52E1EF56CD6D0ACFA7043E65 /* Pods-MarvelWiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelWiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelWiki/Pods-MarvelWiki.release.xcconfig"; sourceTree = "<group>"; };
+		743AAE4F19230170006F7364 /* apiConfigSample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apiConfigSample.plist; sourceTree = "<group>"; };
+		743AAE51192301E5006F7364 /* apiConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apiConfig.plist; sourceTree = "<group>"; };
+		743AAE56192302D0006F7364 /* MEDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEDataManager.h; sourceTree = "<group>"; };
+		743AAE57192302D0006F7364 /* MEDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEDataManager.m; sourceTree = "<group>"; };
+		743AAE59192306FE006F7364 /* MERootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERootViewController.h; sourceTree = "<group>"; };
+		743AAE5A192306FE006F7364 /* MERootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERootViewController.m; sourceTree = "<group>"; };
+		743AAE5C192315B9006F7364 /* MERootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MERootView.xib; sourceTree = "<group>"; };
+		748D42C31A3947E500E6DBA0 /* NSString+MEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MEExtensions.h"; sourceTree = "<group>"; };
+		748D42C41A3947E500E6DBA0 /* NSString+MEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MEExtensions.m"; sourceTree = "<group>"; };
+		74A4A4831922FF00000E233F /* MarvelWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A4A4861922FF00000E233F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		74A4A4881922FF00000E233F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		74A4A48A1922FF00000E233F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		74A4A48E1922FF00000E233F /* MarvelWiki-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarvelWiki-Info.plist"; sourceTree = "<group>"; };
+		74A4A4901922FF00000E233F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		74A4A4921922FF00000E233F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74A4A4941922FF00000E233F /* MarvelWiki-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarvelWiki-Prefix.pch"; sourceTree = "<group>"; };
+		74A4A4951922FF00000E233F /* MEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEAppDelegate.h; sourceTree = "<group>"; };
+		74A4A4961922FF00000E233F /* MEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEAppDelegate.m; sourceTree = "<group>"; };
+		74A4A4981922FF01000E233F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74A4A49E1922FF01000E233F /* MarvelWikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelWikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74A4A49F1922FF01000E233F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		74A4A4A71922FF01000E233F /* MarvelWikiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarvelWikiTests-Info.plist"; sourceTree = "<group>"; };
+		74A4A4A91922FF01000E233F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		74A4A4AB1922FF01000E233F /* MarvelWikiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarvelWikiTests.m; sourceTree = "<group>"; };
+		9630F5F01923B656001F077B /* MECharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MECharacter.h; sourceTree = "<group>"; };
+		9630F5F11923B656001F077B /* MECharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MECharacter.m; sourceTree = "<group>"; };
+		BD098296BA544803B906CBCE /* libPods-MarvelWiki.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelWiki.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74A4A4801922FF00000E233F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A4A4891922FF00000E233F /* CoreGraphics.framework in Frameworks */,
+				74A4A48B1922FF00000E233F /* UIKit.framework in Frameworks */,
+				74A4A4871922FF00000E233F /* Foundation.framework in Frameworks */,
+				33ABB6567954477B932F80E4 /* libPods-MarvelWiki.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74A4A49B1922FF01000E233F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A4A4A01922FF01000E233F /* XCTest.framework in Frameworks */,
+				74A4A4A21922FF01000E233F /* UIKit.framework in Frameworks */,
+				74A4A4A11922FF01000E233F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		743AAE53192302A4006F7364 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				743AAE56192302D0006F7364 /* MEDataManager.h */,
+				743AAE57192302D0006F7364 /* MEDataManager.m */,
+				9630F5F01923B656001F077B /* MECharacter.h */,
+				9630F5F11923B656001F077B /* MECharacter.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		743AAE54192302AE006F7364 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				743AAE5C192315B9006F7364 /* MERootView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		743AAE55192302B4006F7364 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				743AAE59192306FE006F7364 /* MERootViewController.h */,
+				743AAE5A192306FE006F7364 /* MERootViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		748D42C61A39484C00E6DBA0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				748D42C31A3947E500E6DBA0 /* NSString+MEExtensions.h */,
+				748D42C41A3947E500E6DBA0 /* NSString+MEExtensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		74A4A47A1922FF00000E233F = {
+			isa = PBXGroup;
+			children = (
+				74A4A48C1922FF00000E233F /* MarvelWiki */,
+				74A4A4A51922FF01000E233F /* MarvelWikiTests */,
+				74A4A4851922FF00000E233F /* Frameworks */,
+				74A4A4841922FF00000E233F /* Products */,
+				8DCC1EA070156085B31FF16C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		74A4A4841922FF00000E233F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74A4A4831922FF00000E233F /* MarvelWiki.app */,
+				74A4A49E1922FF01000E233F /* MarvelWikiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74A4A4851922FF00000E233F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74A4A4861922FF00000E233F /* Foundation.framework */,
+				74A4A4881922FF00000E233F /* CoreGraphics.framework */,
+				74A4A48A1922FF00000E233F /* UIKit.framework */,
+				74A4A49F1922FF01000E233F /* XCTest.framework */,
+				BD098296BA544803B906CBCE /* libPods-MarvelWiki.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74A4A48C1922FF00000E233F /* MarvelWiki */ = {
+			isa = PBXGroup;
+			children = (
+				748D42C61A39484C00E6DBA0 /* Categories */,
+				74A4A4951922FF00000E233F /* MEAppDelegate.h */,
+				74A4A4961922FF00000E233F /* MEAppDelegate.m */,
+				743AAE55192302B4006F7364 /* Controller */,
+				743AAE54192302AE006F7364 /* View */,
+				743AAE53192302A4006F7364 /* Model */,
+				74A4A4981922FF01000E233F /* Images.xcassets */,
+				74A4A48D1922FF00000E233F /* Supporting Files */,
+			);
+			path = MarvelWiki;
+			sourceTree = "<group>";
+		};
+		74A4A48D1922FF00000E233F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74A4A48E1922FF00000E233F /* MarvelWiki-Info.plist */,
+				74A4A48F1922FF00000E233F /* InfoPlist.strings */,
+				74A4A4921922FF00000E233F /* main.m */,
+				74A4A4941922FF00000E233F /* MarvelWiki-Prefix.pch */,
+				743AAE51192301E5006F7364 /* apiConfig.plist */,
+				743AAE4F19230170006F7364 /* apiConfigSample.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74A4A4A51922FF01000E233F /* MarvelWikiTests */ = {
+			isa = PBXGroup;
+			children = (
+				74A4A4AB1922FF01000E233F /* MarvelWikiTests.m */,
+				74A4A4A61922FF01000E233F /* Supporting Files */,
+			);
+			path = MarvelWikiTests;
+			sourceTree = "<group>";
+		};
+		74A4A4A61922FF01000E233F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74A4A4A71922FF01000E233F /* MarvelWikiTests-Info.plist */,
+				74A4A4A81922FF01000E233F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DCC1EA070156085B31FF16C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E0105A3AD99C934D7BBA0CD /* Pods-MarvelWiki.debug.xcconfig */,
+				52E1EF56CD6D0ACFA7043E65 /* Pods-MarvelWiki.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74A4A4821922FF00000E233F /* MarvelWiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74A4A4AF1922FF01000E233F /* Build configuration list for PBXNativeTarget "MarvelWiki" */;
+			buildPhases = (
+				4921402ECC6E4F20A8511BCA /* Check Pods Manifest.lock */,
+				74A4A47F1922FF00000E233F /* Sources */,
+				74A4A4801922FF00000E233F /* Frameworks */,
+				74A4A4811922FF00000E233F /* Resources */,
+				E803B91883BE42448518280B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarvelWiki;
+			productName = MarvelWiki;
+			productReference = 74A4A4831922FF00000E233F /* MarvelWiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74A4A49D1922FF01000E233F /* MarvelWikiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74A4A4B21922FF01000E233F /* Build configuration list for PBXNativeTarget "MarvelWikiTests" */;
+			buildPhases = (
+				74A4A49A1922FF01000E233F /* Sources */,
+				74A4A49B1922FF01000E233F /* Frameworks */,
+				74A4A49C1922FF01000E233F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74A4A4A41922FF01000E233F /* PBXTargetDependency */,
+			);
+			name = MarvelWikiTests;
+			productName = MarvelWikiTests;
+			productReference = 74A4A49E1922FF01000E233F /* MarvelWikiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74A4A47B1922FF00000E233F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ME;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jason Anderson";
+				TargetAttributes = {
+					74A4A49D1922FF01000E233F = {
+						TestTargetID = 74A4A4821922FF00000E233F;
+					};
+				};
+			};
+			buildConfigurationList = 74A4A47E1922FF00000E233F /* Build configuration list for PBXProject "MarvelWiki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 74A4A47A1922FF00000E233F;
+			productRefGroup = 74A4A4841922FF00000E233F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74A4A4821922FF00000E233F /* MarvelWiki */,
+				74A4A49D1922FF01000E233F /* MarvelWikiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74A4A4811922FF00000E233F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A4A4911922FF00000E233F /* InfoPlist.strings in Resources */,
+				743AAE52192301E5006F7364 /* apiConfig.plist in Resources */,
+				743AAE5019230170006F7364 /* apiConfigSample.plist in Resources */,
+				743AAE5D192315B9006F7364 /* MERootView.xib in Resources */,
+				74A4A4991922FF01000E233F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74A4A49C1922FF01000E233F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A4A4AA1922FF01000E233F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4921402ECC6E4F20A8511BCA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E803B91883BE42448518280B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelWiki/Pods-MarvelWiki-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74A4A47F1922FF00000E233F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A4A4971922FF00000E233F /* MEAppDelegate.m in Sources */,
+				9630F5F21923B656001F077B /* MECharacter.m in Sources */,
+				74A4A4931922FF00000E233F /* main.m in Sources */,
+				748D42C51A3947E500E6DBA0 /* NSString+MEExtensions.m in Sources */,
+				743AAE5B192306FE006F7364 /* MERootViewController.m in Sources */,
+				743AAE58192302D0006F7364 /* MEDataManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74A4A49A1922FF01000E233F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A4A4AC1922FF01000E233F /* MarvelWikiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74A4A4A41922FF01000E233F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74A4A4821922FF00000E233F /* MarvelWiki */;
+			targetProxy = 74A4A4A31922FF01000E233F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74A4A48F1922FF00000E233F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74A4A4901922FF00000E233F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		74A4A4A81922FF01000E233F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74A4A4A91922FF01000E233F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74A4A4AD1922FF01000E233F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74A4A4AE1922FF01000E233F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74A4A4B01922FF01000E233F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0105A3AD99C934D7BBA0CD /* Pods-MarvelWiki.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarvelWiki/MarvelWiki-Prefix.pch";
+				INFOPLIST_FILE = "MarvelWiki/MarvelWiki-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		74A4A4B11922FF01000E233F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E1EF56CD6D0ACFA7043E65 /* Pods-MarvelWiki.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarvelWiki/MarvelWiki-Prefix.pch";
+				INFOPLIST_FILE = "MarvelWiki/MarvelWiki-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		74A4A4B31922FF01000E233F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MarvelWiki.app/MarvelWiki";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarvelWiki/MarvelWiki-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MarvelWikiTests/MarvelWikiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		74A4A4B41922FF01000E233F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MarvelWiki.app/MarvelWiki";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarvelWiki/MarvelWiki-Prefix.pch";
+				INFOPLIST_FILE = "MarvelWikiTests/MarvelWikiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74A4A47E1922FF00000E233F /* Build configuration list for PBXProject "MarvelWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74A4A4AD1922FF01000E233F /* Debug */,
+				74A4A4AE1922FF01000E233F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74A4A4AF1922FF01000E233F /* Build configuration list for PBXNativeTarget "MarvelWiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74A4A4B01922FF01000E233F /* Debug */,
+				74A4A4B11922FF01000E233F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74A4A4B21922FF01000E233F /* Build configuration list for PBXNativeTarget "MarvelWikiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74A4A4B31922FF01000E233F /* Debug */,
+				74A4A4B41922FF01000E233F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74A4A47B1922FF00000E233F /* Project object */;
+}
